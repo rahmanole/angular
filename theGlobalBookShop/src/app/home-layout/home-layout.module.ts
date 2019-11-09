@@ -12,9 +12,12 @@ import { TopNavComponent } from './top-nav/top-nav.component';
 import { SeeMoreComponent } from './pages/see-more/see-more.component';
 import { UpperPartComponent } from './upper-part/upper-part.component';
 import { HomeBodyComponent } from './home-body/home-body.component';
+import { UserRegistrationComponent } from './pages/user-registration/user-registration.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes:Routes = [
   { path: 'seeMore', component: SeeMoreComponent },
+  { path: 'userRegistration', component: UserRegistrationComponent },
   { path: '', component: HomeBodyComponent },
 ]
 
@@ -26,10 +29,11 @@ const appRoutes:Routes = [
     TopNavComponent,
     SeeMoreComponent,
     UpperPartComponent,
-    HomeBodyComponent
+    HomeBodyComponent,
+    UserRegistrationComponent
   ],
 
-  imports: [CommonModule, AngularMaterialModule, RouterModule.forRoot(appRoutes)],
+  imports: [CommonModule, AngularMaterialModule, RouterModule.forRoot(appRoutes),ReactiveFormsModule],
 
   exports: [
     TopToolBarComponent,

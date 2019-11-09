@@ -16,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,AngularMaterialModule,RouterModule.forRoot([
     { path: 'dashboard', component: DashBoardHomeComponent }
   ]),ReactiveFormsModule],
+  
   exports: [
     DashBoardHomeComponent, 
     DashBoardRouterComponent,
