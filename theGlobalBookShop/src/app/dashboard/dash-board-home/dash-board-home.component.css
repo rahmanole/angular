@@ -1,0 +1,31 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav{
+  background: black;
+  opacity: 0.7;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.menuItem{
+  background: rgb(206, 202, 202);
+  color: aliceblue;
+  border-radius:0 ;
+  margin-bottom: 5px;
+}
+.menuItem:hover{
+  background: rgb(206, 202, 202);
+  color: aliceblue;
+  border-radius:0 ;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,50 @@
+.carousel-control-prev,.carousel-control-next {
+    top: -47%;
+}
+
+.sliderContainer{
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+}
+
+.cardOnSlider{
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-bottom: 2px;
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (max-width: 767px) {
+    mat-card{
+        margin-bottom:10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    mat-card img{
+        padding-left: 12px;
+    }
+}
+
+mat-card{
+    width: 270px;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 61px;
+    background: black;
+    height: 100px;
+    opacity: 0.6;
+    color: white;
+}
+
+

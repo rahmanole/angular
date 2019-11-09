@@ -1,0 +1,57 @@
+.topNav{
+    margin-top: 12px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.topNav ul{
+    list-style: none;
+}
+.topNav ul li{
+    margin: right;
+}
+
+
+.topNav a{
+    text-decoration: none;
+}
+
+/* span:first-child{
+    padding: 18px 15px 18px 0px;
+} */
+a:link{
+    color: black;
+}
+
+span{
+    padding: 21px 15px 24px 15px;
+    font-size: 16px;
+    transition: 1s;
+    color: white;
+}
+
+span:hover{
+    background: #4e5f5d;
+    transition: 0.3s;
+}
+
+.active{
+    background: #52c7b8;
+}
+
+.subInfoMenu{
+    height: 1px;
+}
+
+.bar img{
+    height:64px
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+

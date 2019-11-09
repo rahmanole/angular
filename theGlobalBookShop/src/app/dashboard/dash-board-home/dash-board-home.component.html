@@ -1,0 +1,39 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+        <mat-expansion-panel class="menuItem">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Add Book
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <a mat-list-item>Form</a>
+          <a mat-list-item>Upload Excel</a>
+        </mat-expansion-panel>
+        
+        <a mat-list-item class="menuItem">Upload Excel</a>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Add Book
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <a mat-list-item>Form</a>
+        </mat-expansion-panel>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>theGlobalBookShop</span>
+    </mat-toolbar>
+    <div class="container">
+      <app-book-info-form></app-book-info-form>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

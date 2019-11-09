@@ -1,0 +1,44 @@
+<mat-toolbar class="topNav " color="primary">
+        <div class="container p-0" id="navbar">
+
+                <span class="bar p-0">
+                        <img src="../../assets/image/seperator.png" width="1" alt="Los Angeles" />
+                </span>
+                <a href="#"><span class="">Browse By Subject</span></a>
+                <span class="bar p-0">
+                        <img src="../../assets/image/seperator.png" width="1" alt="Los Angeles" />
+                </span>
+                <a href="#"><span>Browse By Publisher</span></a>
+                <span class="bar p-0">
+                        <img src="../../assets/image/seperator.png" width="1" alt="Los Angeles" />
+                </span>
+                <a href="#"><span>Latest Book</span></a>
+                <span class="bar p-0">
+                        <img src="../../assets/image/seperator.png" width="1" alt="Los Angeles" />
+                </span>
+                <a href="#"><span>Special Offer</span></a>
+                <span class="bar p-0">
+                        <img src="../../assets/image/seperator.png" width="1" alt="Los Angeles" />
+                </span>
+                <a href="#"><span>Featured Book</span></a>
+        </div>
+        
+</mat-toolbar>
+<div style="display: none;">
+        sfsfsdfsdf
+</div>
+
+<script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                } else {
+                        navbar.classList.remove("sticky");
+                }
+        }
+</script>

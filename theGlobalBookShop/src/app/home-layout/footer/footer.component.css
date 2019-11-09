@@ -1,0 +1,16 @@
+.footerBottom{
+    background: #263238;
+}
+
+.footerTop{
+    background: #37474F;
+    color:white;
+}
+
+a:link {
+    color:white;
+}
+
+a{
+    text-decoration: none;
+}
